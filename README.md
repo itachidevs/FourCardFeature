@@ -16,7 +16,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -28,20 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![fourcard feaure](https://github.com/babybhavani/FourCardFeature/assets/152834101/7d44f97e-c06b-4b67-b0c4-e756a2171358)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://babybhavani.github.io/FourCardFeature/]([https://babybhavani.github.io/FourCardFeature/](https://babybhavani.github.io/FourCardFeature/))
+- Live Site URL: [https://babybhavani.github.io/FourCardFeature/](https://babybhavani.github.io/FourCardFeature/)
 
 ## My process
 
@@ -52,59 +44,102 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
+- VS-code
+  
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- CSS Grid Templates✨
+    - As a begiinner, I've learnt about the basic alignment of grid templates. In addition with I've grabbbed the knowledge in things like dense properties for rows and columns.
+- Grid column templates
+  - Used to divide the container into vertical parts
+- Grid template rows
+  - used to divide the bix into horizontal parts
+- Grid items alignment🤞
+    - As a designer it is neccessary to learnt about the alignments of the grid Items.
+  - Learned about
+      - grid-column
+      - grid-row
+      - grid-area
+      - justify-content
+      - align-items
+      - justify-self
+- Items sizing💎
+  - It is important to make the grid layout appearance beautiful✨.
+  - minmax()-used to set the carad or inner items to a minimum length and maximum length.
+  - fitcontent() used to fit the content.
+
 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+
+  <section class="container">
+      <section class="headings-container">
+        <h1 class="top-heading">Reliable, efficient delivery</h1>
+        <h1 class="middle-bold-heading"> Powered by Technology </h1>
+        <h3  class="bottom-heading"> Our Artificial Intelligence powered tools use millions of project data points
+          to ensure that your project is successful
+        </h3>
+      </section>
+        <section class="card card1">
+          <h1 class="card-heading">Supervisor</h1>
+          <p class="card-bio"> Monitors activity to identify project roadblocks </p>
+          <img src="images\icon-supervisor.svg" alt="supervisior" class="card-img">
+        </section>
+        <section class="card card2">
+          <h1 class="card-heading"> Team Builder
+          </h1>
+          <p class="card-bio"> Scans our talent network to create the optimal team for your project</p>
+          <img src="images\icon-team-builder.svg" alt="Team Builder" class="card-img">
+        </section>
+        <section class="card card3">
+          <h1 class="card-heading"> Karma
+          </h1>
+          <p class="card-bio">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img src="images\icon-karma.svg" alt="Karma" class="card-img">
+        </section>
+        <section class="card card4">
+          <h1 class="card-heading"> Caluculator
+          </h1>
+          <p class="card-bio">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img src="images\icon-calculator.svg" alt="Caluculator" class="card-img">
+        </section>
+
+    </section>
+  
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.container {
+    padding: 10px;
+    background-color: hsl(0, 0%, 98%);
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: calc(1rem + 1vw);
+    justify-content: center;
+    align-items: center;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```
 
 ### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+It can be developed with the corresponding html pages linked to it. I am willing to add that features to my project.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [CSS GRID](https://cssgrid.io/) - This helped me for alignment of grid items reason. I really liked this pattern and will use it going forward.
+- [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout) - This is an amazing article which helped me finally understand Grids in CSS. I'd recommend it to anyone still learning this concept.
 
 ## Author
+- Frontend Mentor - [@babybhavani](https://www.frontendmentor.io/profile/babybhavani)
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I'd like to convey my thanks to [CSS Grid](https://cssgrid.io) by wes bos. I like the way of teaching presentation. I am going forward to complete remaining courses.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+
+### Happy Coding 💻✨.
